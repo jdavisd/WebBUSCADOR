@@ -1,0 +1,120 @@
+html{
+    box-sizing: border-box;
+    font-size: 65.5%;/*1 rem=10px*/
+}
+
+*, *:before, *::after{
+    box-sizing: inherit;
+}
+body{
+    font-family: sans-serif;
+    background: rgb(238,111,87);
+    background: linear-gradient(90deg, rgba(238,111,87,1) 0%, rgba(255,155,136,1) 100%);
+  
+}
+h1{
+    font-size: 4rem;
+}
+.no-margin{
+    margin: 0;
+}
+.no-pading{
+    padding: 0;
+}
+.centrar-texto{
+    text-align: center;
+}
+.header__texto{
+    text-align: center;
+    color: white;
+    margin-top: 0;
+}
+
+.header{
+    background-color:#070A30;
+    height: 6rem;
+    margin-top: 0;
+}
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 2rem auto;
+    
+    
+}
+
+/**Buscador*/
+.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  .example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  .example button:hover {
+    background: #0b7dda;
+  }
+ 
+.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /**idioma*/
+  .separar-abajo{
+      margin-bottom: 2rem;
+  }
+
+  .separar-arriba{
+      margin-top: 6rem;
+  }
+
+  .boton{
+      height: 4.5rem;
+  }
+  /**tex area*/
+  .contenido-area{
+    max-width: 70rem;
+  }
+  .text-area{
+      width: 100rem;
+  }
+  .centrar{
+      text-align: center;
+  }
+
+  .contenido{
+      display: flex;
+      justify-content: space-around;
+      gap: 2rem;
+      
+  }
+  .contenedor-texto{
+      display: block;
+        width: 80rem;
+  }
+  .contenedor-imagen{
+     margin-right: 15rem;
+  }
+
+  .idioma{
+      margin-left: 15rem;
+  }
+  .centrar-imagen{
+      margin:0 auto;
+  }

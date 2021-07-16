@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+
+{% block content%}
+
+  
+
+</div class="contenedor">
+        <form action="" method="POST">
+            <div class="row justify-content-md-center" style="margin-top: 40px;">
+                <div class="col col-lg-6">              
+                    <input type="text" name="palabra" class="form-control" id="exampleFormControlInput1" placeholder="Escriba alguna palabra" value="{{texto}}">
+                
+                </div>
+                
+                <div class="col col-lg-2">
+                    <button type="submit"  name="submit_button" value="update" class="form-control btn btn-warning">Buscar</button>
+                </div>
+        </div>
+
+       <br>
+       <div class="idioma col col-lg-1">
+        <select class="form-select-lg mb-3 " name="opcion" aria-label=".form-select-lg example">
+            <option value="es"selected="Español" >Español</option>
+            <option value="en">Ingles</option>
+            <option value="pt">Portugues</option>
+          
+          </select>
+    </div>
+    </form>
+    <div class="contenedor contenido">
+        <div class="contenedor-texto">
+          
+                
+                    <textarea class="contendor-texto" id="exampleFormControlTextarea1" rows="8"style="resize: both;margin 0; width:700px;height:200px;">{{contenido}}</textarea>
+                
+           
+        </div>
+  
+
+         
+        {% if imagen=="" %}
+        <div class="contenedor-imagen">
+            <div class="centrar-imagen" >
+                <img src="https://icon-library.com/images/default-profile-icon/default-profile-icon-17.jpg" class="rounded" alt="...">
+            </div> 
+              {% else %}
+              
+              <div class="centrar-imagen">
+                <img src="{{imagen}}" class="rounded" alt="...">
+            </div>
+              {% endif%} 
+
+        </div>
+    
+
+    </div>
+ 
+
+   
+
+
+      
+       
+</div>
+
+
+{% endblock %}
